@@ -1,37 +1,27 @@
 Bagging and Boosting Project
 This project uses Bagging and Boosting machine learning methods on two datasets:
 
-HR Employee Attrition
-
-Mushroom Classification
+HR Employee Attrition dataset
+Mushroom Classification dataset
 
 What My Code Does
+
 Loads the data: Reads the CSV files using pandas.
-
 Checks the data: Displays info about the dataset, checks for missing values.
-
 Prepares the data: Turns text columns into numbers using LabelEncoder, and separates features (X) from the target variable (Y).
-
 Splits into train & test: Splits the data, so we can test the models on unseen data.
-
 Trains models: Runs both Bagging and AdaBoost classifiers from sklearn.
-
 Evaluates models: Prints out the accuracy and shows a confusion matrix for each.
-
 Shows which features matter: Shows which columns are most important for making predictions.
 
-Results (Simple)
 HR Dataset: Bagging was a little better (87% accuracy) than Boosting (85% accuracy).
-
 Mushroom Dataset: Both Bagging and Boosting worked perfectly with 100% accuracy.
 
 Files
 Boost_and_bagg_for_hr.ipynb: Code for the HR data.
-
 Boostings-and-Bagging_for_mushrooms.ipynb: Code for the mushrooms data.
 
 HR-Employee-Attrition.csv: HR dataset.
-
 mushrooms.csv: Mushroom dataset.
 
 Why I Did This
@@ -42,14 +32,11 @@ To see what features (columns) help the model make better predictions.
 Accuracy Score:
 I calculated the accuracy to see how many predictions were correct.
 For example:
-
 HR data: Bagging got about 87% right, AdaBoost about 85%.
-
 Mushroom data: Both got 100% correct.
 
 Confusion Matrix:
-I printed the confusion matrix for each model. This shows:
-
+I return the confusion matrix for each model. This shows:
 How many edible/poisonous mushrooms, or Yes/No attrition cases, were correctly and incorrectly predicted.
-
 It helps me see where the model made mistakes.
+
